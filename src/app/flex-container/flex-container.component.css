@@ -1,5 +1,5 @@
-:host {
-  @media (min-width: 768px) {
+@media (min-width: 768px) {
+  :host {
     display: flex;
   }
 }
