@@ -1,14 +1,14 @@
 import { Directive, ElementRef, HostBinding, Input } from "@angular/core";
 
-export enum FlexDirection {
+export enum FlexContainerDirection {
   Column = 'column',
   Row = 'row'
 }
 
 @Directive({
-  selector: "[appFlexDirection]"
+  selector: "[appFlexContainerDirection]"
 })
-export class FlexDirectionDirective {
+export class FlexContainerDirectionDirective {
   private _appFlexDirection = 'column';
   @Input() 
   set appFlexDirection(value) {

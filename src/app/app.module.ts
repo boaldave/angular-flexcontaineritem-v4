@@ -6,7 +6,7 @@ import { AppComponent } from "./app.component";
 import { HelloComponent } from "./hello.component";
 import { FlexContainerComponent } from "./flex-container/flex-container.component";
 import { FlexItemComponent } from "./flex-item/flex-item.component";
-import { FlexDirectionDirective } from './flex-container/flex-direction.directive';
+import { FlexContainerDirectionDirective } from './flex-container/flex-container-direction.directive';
 
 @NgModule({
   imports: [BrowserModule, FormsModule],
@@ -15,7 +15,7 @@ import { FlexDirectionDirective } from './flex-container/flex-direction.directiv
     HelloComponent,
     FlexContainerComponent,
     FlexItemComponent,
-    FlexDirectionDirective
+    FlexContainerDirectionDirective
   ],
   bootstrap: [AppComponent]
 })
