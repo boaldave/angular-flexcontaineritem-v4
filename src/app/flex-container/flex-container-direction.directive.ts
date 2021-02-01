@@ -9,14 +9,14 @@ export enum FlexContainerDirection {
   selector: "[appFlexContainerDirection]"
 })
 export class FlexContainerDirectionDirective {
-  private _appFlexDirection = 'column';
+  private _appFlexContainerDirection = 'column';
   @Input() 
-  set appFlexDirection(value) {
-    this._appFlexDirection = value;
-    console.log('log:this._appFlexDirection =', value);
+  set appFlexContainerDirection(value) {
+    this._appFlexContainerDirection = value;
+    console.log('log:this._appFlexContainerDirection =', value);
   };
-  get appFlexDirection() {
-    return this._appFlexDirection;
+  get appFlexContainerDirection() {
+    return this._appFlexContainerDirection;
   };
 
   constructor(el: ElementRef) {
@@ -26,7 +26,7 @@ export class FlexContainerDirectionDirective {
 
   @HostBinding('style.FlexDirection')
   get cssClasses() {
-      return this.appFlexDirection;
+      return this.appFlexContainerDirection;
   }
 
 }
