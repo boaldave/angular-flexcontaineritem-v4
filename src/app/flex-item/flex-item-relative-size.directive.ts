@@ -3,11 +3,17 @@ import { Directive, ElementRef, HostBinding, Input } from "@angular/core";
 @Directive({
   selector: "[appFlexItemRelativeSize]"
 })
+/**
+ * Defines relative FlexItem sizes.
+ * If FlexDirectionFlow = Horizontal, then all FlexItems will fill width.
+ *   and width of each = appFlexItemRelativeSize / sumOfFlexItemRelativeSizes
+ * If FlexDirectionFlow = Vertical, then all FlexItems will fill height.
+ *   and height of each = appFlexItemRelativeSize / sumOfFlexItemRelativeSizes
+ * See also FlexItemGrow.
+ */
 export class FlexItemRelativeSizeDirective {
   private _appFlexItemRelativeSize = 1; //default
   /**
-   * Defines relative FlexItem sizes.
-   * @param value
    * - To create a FlexItem that is double the size of a FlexItem of 
    *   size = 1, set value = 2 
    * - To create a FlexItem that is triple the size of a FlexItem of 
