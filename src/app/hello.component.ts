@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { FlexContainerDirection } from './flex-container/flex-container-direction.directive';
+import { FlexContainerFlowDirection } from './flex-container/flex-container-flow-direction.directive';
 
 @Component({
   selector: 'hello',
@@ -10,5 +10,5 @@ import { FlexContainerDirection } from './flex-container/flex-container-directio
 export class HelloComponent  {
   @Input() name: string;
 
-  flexContainerDirection = FlexContainerDirection;
+  flexContainerFlowDirection = FlexContainerFlowDirection;
 }
